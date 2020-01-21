@@ -1,0 +1,103 @@
+// VARIABLES + OVERRIDES
+// ------------------------------------
+@import 'variables';
+
+// BOOTSTRAP COMPONENTS
+// ------------------------------------
+// Import all components
+// @import 'bootstrap/scss/bootstrap.scss';
+// @import 'bootstrap-vue/src/index.scss';
+
+// Import custom Bootstrap components
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_mixins.scss';
+@import 'bootstrap/scss/_utilities.scss';
+@import 'bootstrap/scss/_root.scss';
+@import 'bootstrap/scss/_reboot.scss';
+@import 'bootstrap/scss/_type.scss';
+@import 'bootstrap/scss/_images.scss';
+@import 'bootstrap/scss/_grid.scss';
+// @import 'bootstrap/scss/_tables.scss';
+@import 'bootstrap/scss/_forms.scss';
+@import 'bootstrap/scss/_buttons.scss';
+@import 'bootstrap/scss/_transitions.scss';
+// @import 'bootstrap/scss/_dropdown.scss';
+// @import 'bootstrap/scss/_button-group.scss';
+// @import 'bootstrap/scss/_nav.scss';
+// @import 'bootstrap/scss/_navbar.scss';
+// @import 'bootstrap/scss/_card.scss';
+// @import 'bootstrap/scss/_breadcrumb.scss';
+// @import 'bootstrap/scss/_pagination.scss';
+// @import 'bootstrap/scss/_badge.scss';
+// @import 'bootstrap/scss/_alert.scss';
+// @import 'bootstrap/scss/_progress.scss';
+// @import 'bootstrap/scss/_list-group.scss';
+// @import 'bootstrap/scss/_close.scss';
+// @import 'bootstrap/scss/_toasts.scss';
+// @import 'bootstrap/scss/_modal.scss';
+// @import 'bootstrap/scss/_tooltip.scss';
+// @import 'bootstrap/scss/_popover.scss';
+// @import 'bootstrap/scss/_carousel.scss';
+// @import 'bootstrap/scss/_spinners.scss';
+// @import 'bootstrap/scss/_helpers.scss';
+// @import 'bootstrap/scss/utilities/_api.scss';
+
+// Import custom Bootstrap-Vue components
+@import "bootstrap-vue/src/_variables.scss";
+@import "bootstrap-vue/src/_utilities.scss";
+// @import "bootstrap-vue/src/components/card/index.scss";
+// @import "bootstrap-vue/src/components/dropdown/index.scss";
+// @import "bootstrap-vue/src/components/form-checkbox/index.scss";
+// @import "bootstrap-vue/src/components/form-file/index.scss";
+// @import "bootstrap-vue/src/components/form-input/index.scss";
+// @import "bootstrap-vue/src/components/form-radio/index.scss";
+// @import "bootstrap-vue/src/components/form-tags/index.scss";
+// @import "bootstrap-vue/src/components/input-group/index.scss";
+// @import "bootstrap-vue/src/components/modal/index.scss";
+// @import "bootstrap-vue/src/components/nav/index.scss";
+// @import "bootstrap-vue/src/components/navbar/index.scss";
+// @import "bootstrap-vue/src/components/pagination/index.scss";
+// @import "bootstrap-vue/src/components/pagination-nav/index.scss";
+// @import "bootstrap-vue/src/components/popover/index.scss";
+// @import "bootstrap-vue/src/components/table/index.scss";
+// @import "bootstrap-vue/src/components/toast/index.scss";
+// @import "bootstrap-vue/src/components/tooltip/index.scss";
+
+// CUSTOM GLOBAL STYLES
+// ------------------------------------
+html {
+  background: $gray-900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+a {
+  transition: $transition-base;
+}
+
+// PAGE TRANSITIONS
+// ------------------------------------
+.page-enter-active,
+.page-leave-active {
+  transition: opacity $speed;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
