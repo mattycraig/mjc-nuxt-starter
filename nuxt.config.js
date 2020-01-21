@@ -99,14 +99,14 @@ export default {
   // ------------------------------------
   modules: [
     'bootstrap-vue/nuxt',
-    '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap',
     '@nuxtjs/browserconfig',
     'nuxt-fontawesome',
     'nuxt-webfontloader',
     'nuxt-responsive-loader',
-    'nuxt-imagemin'
+    'nuxt-imagemin',
+    '@nuxtjs/pwa'
   ],
   // ------------------------------------
   // PWA OPTIONS

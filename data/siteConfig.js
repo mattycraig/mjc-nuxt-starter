@@ -4,7 +4,7 @@ const config = {
   siteShortTitle: 'ShortTitle',
   siteDescription: 'SiteDescription_Here',
   siteLogo: '/icon.png',
-  siteUrl: 'https://mysite.com',
+  siteUrl: 'https://mjc-nuxt-starter.netlify.com',
   googleAnalyticsID: 'UA-#######',
   themeColor: '#195697',
   bkgColor: '#ffffff'
