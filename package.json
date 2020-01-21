@@ -1,7 +1,7 @@
 {
   "name": "mjc-nuxt-starter",
   "version": "1.0.0",
-  "description": "Nuxt.js stater for new Vue projects",
+  "description": "Nuxt.js starter for new Vue projects",
   "author": "Matthew Jason Craig",
   "private": true,
   "scripts": {

@@ -1,10 +1,10 @@
-# nuxt-starter
+# mjc-nuxt-starter
 
-> My hunky-dory Nuxt.js project
+> Nuxt.js starter for new Vue projects
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
