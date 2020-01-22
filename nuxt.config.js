@@ -41,7 +41,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: config.siteLogo
+        content: `${config.siteUrl}/${config.siteLogo}`
       },
       {
         hid: 'og:title',
@@ -61,7 +61,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: config.siteLogo
+        content: `${config.siteUrl}/${config.siteLogo}`
       },
       {
         hid: 'og:description',
@@ -149,13 +149,17 @@ export default {
   // CUSTOM WEBFONT OPTIONS
   // ------------------------------------
   webfontloader: {
-    custom: {
-      families: ['Poppins:n4,n7', 'Oswald:n7'],
-      urls: [
-        'https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap',
-        'https://fonts.googleapis.com/css?family=Oswald:700&display=swap'
-      ]
+    google: {
+      families: ['Poppins:400,700', 'Oswald:700']
     }
+    // WITH DISPLAY SWAP
+    // custom: {
+    //   families: ['Poppins:n4,n7', 'Oswald:n7'],
+    //   urls: [
+    //     'https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap',
+    //     'https://fonts.googleapis.com/css?family=Oswald:700&display=swap'
+    //   ]
+    // }
   },
   // ------------------------------------
   // GLOBAL SCSS VARIABLE/MIXINS IMPORTS

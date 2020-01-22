@@ -26,9 +26,9 @@ export default {
   },
   data() {
     return {
-      metaTitle: 'Homepage',
-      metaDescription: 'My_custom_description'
-      // metaImage: '/icon_home.png'
+      metaTitle: 'Homepage'
+      // metaDescription: 'My_custom_description'
+      // metaImage: 'icon.png'
     }
   },
   head() {
@@ -51,25 +51,25 @@ export default {
           content: this.metaDescription
         },
         {
-          hid: 'twitter:image',
-          name: 'twitter:image',
-          content: this.metaImage
-        },
-        {
           hid: 'og:title',
           property: 'og:title',
           content: `${this.metaTitle} - ${config.siteTitle}`
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.metaImage
         },
         {
           hid: 'og:description',
           property: 'og:description',
           content: this.metaDescription
         }
+        // {
+        //   hid: 'twitter:image',
+        //   name: 'twitter:image',
+        //   content: `${config.siteUrl}/${this.metaImage}`
+        // },
+        // {
+        //   hid: 'og:image',
+        //   property: 'og:image',
+        //   content: `${config.siteUrl}/${this.metaImage}`
+        // }
       ]
     }
   }

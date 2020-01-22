@@ -30,5 +30,6 @@ header {
 
 .nuxt-link-exact-active {
   color: $secondary;
+  font-weight: $font-weight-bold;
 }
 </style>
