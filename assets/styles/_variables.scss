@@ -1,7 +1,43 @@
 // COLOURS
 // ------------------------------------
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
 $primary: #195697;
 $secondary: #664d9e;
+
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: ();
+$theme-colors: map-merge(("primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "white": $white,
+    "black": $black),
+  $theme-colors);
+
+$body-bg: $white;
+$body-color: $gray-700;
 
 // FONTS
 // ------------------------------------
@@ -23,6 +59,8 @@ $headings-font-weifght: 700;
 
 // LINKS
 // ------------------------------------
+$link-color: $primary;
+$link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: none;
 
 // ANIMATION
@@ -31,4 +69,4 @@ $speed: 0.3s;
 
 // GRID
 // ------------------------------------
-// $grid-gutter-width: 30px;
+$grid-gutter-width: 50px;

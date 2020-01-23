@@ -1,47 +1,48 @@
 <template lang="pug">
-  div
-    .intro
-      Logo
-      h1.title.
-        Homepage
-
-      h2.subtitle.
-        This is the homepage.
-
+  .intro
+    h1.title Error {{statusCode}}
+    h2.subtitle.
+      {{ message }}
+    div(v-if='statusCode === 404')
       .links
-        nuxt-link.btn.btn-primary.mx-1(to='/').
-          Homepage
-        nuxt-link.btn.btn-secondary.mx-1(to='/about').
-          About Page
+        nuxt-link.btn.btn-primary(to='/').
+          Return Home
+
 
 </template>
 
 <script>
 import config from '~/data/siteConfig'
-import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
-  },
-  data() {
-    return {
-      metaTitle: 'Homepage'
+  props: {
+    error: {
+      type: Object,
+      default: null
     }
   },
+  computed: {
+    statusCode() {
+      return (this.error && this.error.statusCode) || 500
+    },
+    message() {
+      return this.error.message
+    }
+  },
+  layout: 'default',
   head() {
     return {
-      title: this.metaTitle,
+      title: `Error ${this.error.statusCode}`,
       meta: [
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: `${this.metaTitle} - ${config.siteTitle}`
+          content: `Error ${this.error.statusCode} - ${config.siteTitle}`
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `${this.metaTitle} - ${config.siteTitle}`
+          content: `Error ${this.error.statusCode} - ${config.siteTitle}`
         }
       ]
     }

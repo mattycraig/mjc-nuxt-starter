@@ -1,10 +1,11 @@
 <template lang="pug">
   header
     span {{ siteName }}
-    nuxt-link.btn.btn-sm.btn-link.mx-1.ml-auto(to='/').
-      Homepage
-    nuxt-link.btn.btn-sm.btn-link.mx-1(to='/about').
-      About Page
+    .ml-auto
+      nuxt-link.btn.btn-sm.btn-link.mx-1(to='/').
+        Homepage
+      nuxt-link.btn.btn-sm.btn-link.mx-1(to='/about').
+        About Page
 
 </template>
 

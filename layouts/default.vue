@@ -3,7 +3,7 @@
 
     Header
 
-    b-container
+    b-container(fluid='lg')
       nuxt
 
     Footer

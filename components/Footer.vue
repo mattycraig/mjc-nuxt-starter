@@ -1,9 +1,13 @@
 <template lang="pug">
   footer
     span &copy; {{ new Date().getFullYear() }} {{ siteName }}
-    font-awesome-icon.mx-1.ml-auto(:icon="['fab', 'facebook']")
-    font-awesome-icon.mx-1(:icon="['fab', 'twitter']")
-    font-awesome-icon.mx-1(:icon="['fab', 'github']")
+    span.ml-auto
+      a(href='#')
+        font-awesome-icon.mx-1(:icon="['fab', 'facebook']")
+      a(href='#')
+        font-awesome-icon.mx-1(:icon="['fab', 'twitter']")
+      a(href='#')
+        font-awesome-icon.mx-1(:icon="['fab', 'github']")
 </template>
 
 <script>
