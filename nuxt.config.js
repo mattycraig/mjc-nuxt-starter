@@ -75,9 +75,9 @@ export default {
     ]
   },
   // ------------------------------------
-  // CUSTOMIZE THE PROGRESS-BAR COLOR
+  // CUSTOM LOADER
   // ------------------------------------
-  loading: { color: config.themeColor },
+  loading: '~/components/Loading.vue',
   // ------------------------------------
   // GLOBAL CSS
   // ------------------------------------
