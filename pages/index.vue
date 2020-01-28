@@ -1,19 +1,16 @@
-<template lang="pug">
-  div
-    .intro
-      Logo
-      h1.title.
-        Homepage
-
-      h2.subtitle.
-        This is the homepage.
-
-      .links
-        nuxt-link.btn.btn-primary.mx-1(to='/').
-          Homepage
-        nuxt-link.btn.btn-secondary.mx-1(to='/about').
-          About Page
-
+<template>
+  <div>
+    <div class="intro">
+      <Logo />
+      <h1 class="title">Homepage</h1>
+      <h2 class="subtitle">This is the homepage.</h2>
+      <div class="links">
+        <nuxt-link class="btn btn-primary mx-1" to="/">Home</nuxt-link>
+        <nuxt-link class="btn btn-secondary mx-1" to="/about">About</nuxt-link>
+        <nuxt-link class="btn btn-tertiary mx-1" to="/sink">Sink</nuxt-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

@@ -66,10 +66,14 @@
 
 // CUSTOM GLOBAL STYLES
 // ------------------------------------
-html {
-  background: $gray-900;
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+// TYPOGRAPHY
+// ------------------------------------
 h1,
 h2,
 h3,
@@ -86,18 +90,27 @@ h6,
   letter-spacing: -0.05em;
 }
 
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+}
+
 a {
   transition: $transition-base;
 }
 
-// PAGE TRANSITIONS
+// BUTTONS
 // ------------------------------------
-.page-enter-active,
-.page-leave-active {
-  transition: opacity $speed;
+.btn {
+  text-transform: uppercase;
 }
 
-.page-enter,
-.page-leave-to {
-  opacity: 0;
+// BADGES
+// ------------------------------------
+.badge {
+  font-family: $subheading;
+  text-transform: uppercase;
 }

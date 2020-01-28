@@ -1,14 +1,13 @@
-<template lang="pug">
-  .intro
-    h1.title Error {{statusCode}}
-    h2.subtitle.
-      {{ message }}
-    div(v-if='statusCode === 404')
-      .links
-        nuxt-link.btn.btn-primary(to='/').
-          Return Home
-
-
+<template>
+  <div class="intro">
+    <h1 class="title">Error {{ statusCode }}</h1>
+    <h2 class="subtitle">{{ message }}</h2>
+    <div v-if="statusCode === 404">
+      <div class="links">
+        <nuxt-link class="btn btn-primary" to="/">Return Home</nuxt-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

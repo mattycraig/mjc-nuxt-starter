@@ -149,17 +149,14 @@ export default {
   // CUSTOM WEBFONT OPTIONS
   // ------------------------------------
   webfontloader: {
-    google: {
-      families: ['Poppins:400,700', 'Oswald:700']
+    custom: {
+      families: ['Poppins:n4,n7', 'Montserrat:n7', 'Rajdhani:n7'],
+      urls: [
+        'https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap',
+        'https://fonts.googleapis.com/css?family=Montserrat:700&display=swap',
+        'https://fonts.googleapis.com/css?family=Rajdhani:700&display=swap'
+      ]
     }
-    // WITH DISPLAY SWAP
-    // custom: {
-    //   families: ['Poppins:n4,n7', 'Oswald:n7'],
-    //   urls: [
-    //     'https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap',
-    //     'https://fonts.googleapis.com/css?family=Oswald:700&display=swap'
-    //   ]
-    // }
   },
   // ------------------------------------
   // GLOBAL SCSS VARIABLE/MIXINS IMPORTS

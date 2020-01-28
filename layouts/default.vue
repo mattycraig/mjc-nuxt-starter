@@ -1,13 +1,13 @@
-<template lang="pug">
-  div.layout.layout--default
-
-    Header
-
-    b-container(fluid='lg')
-      nuxt
-
-    Footer
-
+<template>
+  <div class="layout layout--default">
+    <Header></Header>
+    <main id="content">
+      <b-container fluid="lg">
+        <nuxt></nuxt>
+      </b-container>
+    </main>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
@@ -21,3 +21,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#content {
+  flex: 1 0 auto;
+}
+</style>

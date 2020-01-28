@@ -1,7 +1,8 @@
-<template lang="pug">
-  .loading(v-if='loading')
-    .loader
-    .h1 Loading...
+<template>
+  <div v-if="loading" class="loading">
+    <div class="loader"></div>
+    <div class="h1">Loading...</div>
+  </div>
 </template>
 
 <script>

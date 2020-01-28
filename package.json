@@ -22,7 +22,7 @@
   "dependencies": {
     "nuxt": "^2.11.0",
     "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.2.2",
+    "bootstrap-vue": "^2.3.0",
     "@nuxtjs/pwa": "^3.0.0-beta.19"
   },
   "devDependencies": {
@@ -43,15 +43,13 @@
     "eslint-plugin-nuxt": ">=0.5.0",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.1",
-    "lint-staged": "^10.0.2",
+    "lint-staged": "^10.0.3",
     "node-sass": "^4.13.1",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-imagemin": "^1.0.0",
     "nuxt-responsive-loader": "^2.0.1",
     "nuxt-webfontloader": "^1.1.0",
     "prettier": "^1.19.1",
-    "pug": "2.0.4",
-    "pug-plain-loader": "^1.0.0",
     "sass-loader": "^8.0.2",
     "stylelint": "^13.0.0"
   }

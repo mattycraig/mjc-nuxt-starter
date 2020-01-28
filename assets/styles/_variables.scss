@@ -6,41 +6,100 @@ $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
 $gray-500: #adb5bd;
-$gray-600: #6c757d;
+$gray-600: #62737f;
 $gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
+$gray-800: #2d2f33;
+$gray-900: #212427;
 $black: #000;
 
-$primary: #195697;
-$secondary: #664d9e;
+$primary: #5f77ca;
+$secondary: #28a745;
+$tertiary: #dc3545;
 
 $success: #28a745;
 $info: #17a2b8;
 $warning: #ffc107;
 $danger: #dc3545;
 
-$light: $gray-100;
-$dark: $gray-800;
+$lightest: $gray-100;
+$lighter: $gray-200;
+$light: $gray-300;
+$dark: $gray-700;
+$darker: $gray-800;
+$darkest: $gray-900;
 
 $theme-colors: ();
 $theme-colors: map-merge(("primary": $primary,
     "secondary": $secondary,
+    "tertiary": $tertiary,
     "success": $success,
     "info": $info,
     "warning": $warning,
     "danger": $danger,
+    "lightest": $lightest,
+    "lighter": $lighter,
     "light": $light,
     "dark": $dark,
+    "darker": $darker,
+    "darkest": $darkest,
     "white": $white,
     "black": $black),
   $theme-colors);
 
-$body-bg: $white;
-$body-color: $gray-700;
-
-// FONTS
+// SPACING
 // ------------------------------------
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge((0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer * .75,
+    4: $spacer,
+    5: $spacer * 1.25,
+    6: $spacer * 1.5,
+    7: $spacer * 1.75,
+    8: $spacer * 2),
+  $spacers);
+
+// BODY
+// ------------------------------------
+$body-bg: $white;
+$body-color: $gray-600;
+
+// LINKS
+// ------------------------------------
+$link-color: $primary;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+// COMPONENTS
+// ------------------------------------
+$border-width: 2px;
+$border-color: $gray-300;
+
+$border-radius-sm: .5rem;
+$border-radius: .75rem;
+$border-radius-lg: 1rem;
+
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+$box-shadow: 0 .5rem 1rem rgba($black, .15);
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, .075);
+
+// ANIMATION
+// ------------------------------------
+$speed: 0.3s;
+
+$transition-base: all $speed ease-in-out;
+$transition-fade: opacity $speed linear;
+$transition-collapse: height $speed ease;
+
+// TYPOGRAPHY
+// ------------------------------------
+$line-height-base: 1.6;
+
+$heading: 'Montserrat';
+$subheading: 'Rajdhani';
 $font-family-base: 'Poppins',
 -apple-system,
 BlinkMacSystemFont,
@@ -54,19 +113,142 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol",
 "Noto Color Emoji";
-$headings-font-family: 'Oswald';
-$headings-font-weifght: 700;
+$headings-font-family: $heading;
+$headings-font-weight: 700;
 
-// LINKS
-// ------------------------------------
-$link-color: $primary;
-$link-hover-color: darken($link-color, 15%);
-$link-hover-decoration: none;
+$text-muted: $gray-500;
 
-// ANIMATION
+// TABLES
 // ------------------------------------
-$speed: 0.3s;
+// TODO: Tables Variables
 
-// GRID
+// BUTTONS + FORMS
 // ------------------------------------
-$grid-gutter-width: 50px;
+$input-btn-padding-y: $spacer / 2;
+$input-btn-padding-x: $spacer;
+
+$input-btn-padding-y-sm: $spacer / 4;
+$input-btn-padding-x-sm: $spacer / 2;
+
+$input-btn-padding-y-lg: $spacer / 1.5;
+$input-btn-padding-x-lg: $spacer;
+
+// BUTTONS
+// ------------------------------------
+$btn-border-radius: $border-radius-sm;
+$btn-font-family: $subheading;
+$btn-font-weight: 700;
+
+$btn-border-radius-lg: $border-radius;
+
+// FORMS
+// ------------------------------------
+// TODO: Form Variables
+
+// NAVS
+// ------------------------------------
+$nav-link-padding-y: $input-btn-padding-y;
+$nav-link-padding-x: $input-btn-padding-x;
+$nav-link-disabled-color: $text-muted;
+
+$nav-tabs-border-color: $border-color;
+
+// NAVBAR
+// ------------------------------------
+$navbar-padding-y: $spacer;
+
+$navbar-nav-link-padding-x: $spacer / 1.5;
+
+$navbar-brand-margin-right: $spacer;
+
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-font-size: 1rem;
+
+$navbar-dark-toggler-border-color: transparent;
+
+$navbar-light-toggler-border-color: transparent;
+
+// DROPDOWNS
+// ------------------------------------
+// TODO: Dropdown Variables
+
+// PAGINATION
+// ------------------------------------
+$pagination-padding-y: $input-btn-padding-y;
+$pagination-padding-x: $input-btn-padding-x;
+
+$pagination-border-color: $border-color;
+
+// CARDS
+// ------------------------------------
+$card-spacer-y: $spacer * 1.25;
+$card-spacer-x: $spacer * 1.25;
+$card-title-spacer-y: $spacer;
+$card-border-color: rgba($black, .125);
+$card-cap-padding-y: $spacer;
+$card-cap-padding-x: $spacer;
+$card-cap-bg: rgba($black, .03);
+
+// TOOLTIPS
+// ------------------------------------
+// TODO: Tooltips Variables
+
+// POPOVERS
+// ------------------------------------
+// TODO: Popovers Variables
+
+// TOASTS
+// ------------------------------------
+// TODO: Toasts Variables
+
+// BADGES
+// ------------------------------------
+$badge-font-size: 1rem * .875;
+$badge-padding-y: .25em;
+$badge-padding-x: .5em;
+$badge-border-radius: $border-radius-sm / 2;
+
+// MODALS
+// ------------------------------------
+// TODO: Modals Variables
+
+// ALERTS
+// ------------------------------------
+// TODO: Alerts Variables
+
+// PROGRESS BARS
+// ------------------------------------
+// TODO: Progress Bars Variables
+
+// LIST GROUP
+// ------------------------------------
+// TODO: List Group Variables
+
+// IMAGE THUMBNAILS
+// ------------------------------------
+// TODO: Image Thumbnails Variables
+
+// FIGURES
+// ------------------------------------
+// TODO: Figures Variables
+
+// BREADCRUMBS
+// ------------------------------------
+// TODO: Breadcrumbs Variables
+
+// CAROUSEL
+// ------------------------------------
+// TODO: Carousel Variables
+
+// SPINNERS
+// ------------------------------------
+// TODO: Spinners Variables
+
+// CLOSE
+// ------------------------------------
+// TODO: Close Variables
+
+// CODE
+// ------------------------------------
+// TODO: Code Variables

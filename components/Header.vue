@@ -1,12 +1,16 @@
-<template lang="pug">
-  header
-    span {{ siteName }}
-    .ml-auto
-      nuxt-link.btn.btn-sm.btn-link.mx-1(to='/').
-        Homepage
-      nuxt-link.btn.btn-sm.btn-link.mx-1(to='/about').
-        About Page
-
+<template>
+  <header>
+    <b-container fluid="lg" class="d-flex">
+      <span>{{ siteName }}</span>
+      <div class="ml-auto">
+        <nuxt-link class="btn btn-sm btn-link mx-1" to="/">Home</nuxt-link>
+        <nuxt-link class="btn btn-sm btn-link mx-1" to="/about"
+          >About</nuxt-link
+        >
+        <nuxt-link class="btn btn-sm btn-link mx-1" to="/sink">Sink</nuxt-link>
+      </div>
+    </b-container>
+  </header>
 </template>
 
 <script>
@@ -23,10 +27,9 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  padding: $spacer;
-  background: $gray-200;
   display: flex;
   align-items: center;
+  padding: $spacer;
 }
 
 .nuxt-link-exact-active {
