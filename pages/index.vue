@@ -19,11 +19,11 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
   },
   data() {
     return {
-      metaTitle: 'Homepage'
+      metaTitle: 'Homepage',
     }
   },
   head() {
@@ -33,16 +33,16 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: `${this.metaTitle} - ${config.siteTitle}`
+          content: `${this.metaTitle} - ${config.siteTitle}`,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `${this.metaTitle} - ${config.siteTitle}`
-        }
-      ]
+          content: `${this.metaTitle} - ${config.siteTitle}`,
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

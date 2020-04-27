@@ -7,5 +7,5 @@ export default {
   siteUrl: 'https://mjc-nuxt-starter.netlify.com',
   googleAnalyticsID: 'UA-#######',
   themeColor: '#195697',
-  bkgColor: '#ffffff'
+  bkgColor: '#ffffff',
 }

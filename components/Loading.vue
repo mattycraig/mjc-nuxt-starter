@@ -8,7 +8,7 @@
 <script>
 export default {
   data: () => ({
-    loading: false
+    loading: false,
   }),
   methods: {
     start() {
@@ -16,8 +16,8 @@ export default {
     },
     finish() {
       this.loading = false
-    }
-  }
+    },
+  },
 }
 </script>
 

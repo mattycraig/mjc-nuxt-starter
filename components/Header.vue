@@ -19,9 +19,9 @@ import config from '~/data/siteConfig'
 export default {
   data() {
     return {
-      siteName: config.siteTitle
+      siteName: config.siteTitle,
     }
-  }
+  },
 }
 </script>
 
@@ -29,7 +29,7 @@ export default {
 header {
   display: flex;
   align-items: center;
-  padding: $spacer;
+  padding: $spacer 0;
 }
 
 .nuxt-link-exact-active {

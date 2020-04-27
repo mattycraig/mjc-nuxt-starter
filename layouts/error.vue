@@ -17,8 +17,8 @@ export default {
   props: {
     error: {
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
   computed: {
     statusCode() {
@@ -26,7 +26,7 @@ export default {
     },
     message() {
       return this.error.message
-    }
+    },
   },
   layout: 'default',
   head() {
@@ -36,16 +36,16 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: `Error ${this.error.statusCode} - ${config.siteTitle}`
+          content: `Error ${this.error.statusCode} - ${config.siteTitle}`,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `Error ${this.error.statusCode} - ${config.siteTitle}`
-        }
-      ]
+          content: `Error ${this.error.statusCode} - ${config.siteTitle}`,
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

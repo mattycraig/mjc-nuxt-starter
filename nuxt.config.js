@@ -12,67 +12,67 @@ export default {
       { charset: 'utf-8' },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+        content: 'width=device-width, initial-scale=1, shrink-to-fit=no',
       },
       {
         'http-equiv': 'x-ua-compatible',
-        content: 'ie=edge'
+        content: 'ie=edge',
       },
       {
         hid: 'description',
         name: 'description',
-        content: config.siteDescription
+        content: config.siteDescription,
       },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
-        content: 'summary'
+        content: 'summary',
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: config.siteTitle
+        content: config.siteTitle,
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: config.siteDescription
+        content: config.siteDescription,
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: `${config.siteUrl}/${config.siteLogo}`
+        content: `${config.siteUrl}/${config.siteLogo}`,
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: config.siteTitle
+        content: config.siteTitle,
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: config.siteTitle
+        content: config.siteTitle,
       },
       {
         hid: 'og:type',
         property: 'og:type',
-        content: 'website'
+        content: 'website',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `${config.siteUrl}/${config.siteLogo}`
+        content: `${config.siteUrl}/${config.siteLogo}`,
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: config.siteDescription
-      }
+        content: config.siteDescription,
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'sitemap', type: 'application/xml', href: '/sitemap.xml' }
-    ]
+      { rel: 'sitemap', type: 'application/xml', href: '/sitemap.xml' },
+    ],
   },
   // ------------------------------------
   // CUSTOM LOADER
@@ -92,7 +92,7 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
   ],
   // ------------------------------------
   // NUXT.JS MODULES
@@ -106,7 +106,7 @@ export default {
     'nuxt-webfontloader',
     'nuxt-responsive-loader',
     'nuxt-imagemin',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
   ],
   // ------------------------------------
   // PWA OPTIONS
@@ -117,8 +117,8 @@ export default {
       description: config.siteDescription,
       short_name: config.siteShortTitle,
       theme_color: config.themeColor,
-      background_color: config.bkgColor
-    }
+      background_color: config.bkgColor,
+    },
   },
   // ------------------------------------
   // BOOTSTRAPVUE GLOBALS/OPTIONS
@@ -126,7 +126,7 @@ export default {
   bootstrapVue: {
     bootstrapCSS: false,
     bootstrapVueCSS: false,
-    componentPlugins: ['LayoutPlugin', 'FormPlugin']
+    // componentPlugins: ['LayoutPlugin', 'FormPlugin']
   },
   // ------------------------------------
   // FONTAWESOME OPTIONS
@@ -136,14 +136,14 @@ export default {
       // SOLID
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
+        icons: ['fas'],
       },
       // BRANDS
       {
         set: '@fortawesome/free-brands-svg-icons',
-        icons: ['fab']
-      }
-    ]
+        icons: ['fab'],
+      },
+    ],
   },
   // ------------------------------------
   // CUSTOM WEBFONT OPTIONS
@@ -154,9 +154,9 @@ export default {
       urls: [
         'https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap',
         'https://fonts.googleapis.com/css?family=Montserrat:700&display=swap',
-        'https://fonts.googleapis.com/css?family=Rajdhani:700&display=swap'
-      ]
-    }
+        'https://fonts.googleapis.com/css?family=Rajdhani:700&display=swap',
+      ],
+    },
   },
   // ------------------------------------
   // GLOBAL SCSS VARIABLE/MIXINS IMPORTS
@@ -166,31 +166,31 @@ export default {
       '~/assets/styles/_variables.scss',
       '~/node_modules/bootstrap/scss/_functions.scss',
       '~/node_modules/bootstrap/scss/_variables.scss',
-      '~/node_modules/bootstrap/scss/_mixins.scss'
-    ]
+      '~/node_modules/bootstrap/scss/_mixins.scss',
+    ],
   },
   // ------------------------------------
   // BROWSERCONFIG OPTIONS
   // ------------------------------------
   browserconfig: {
-    TileColor: config.themeColor
+    TileColor: config.themeColor,
   },
   // ------------------------------------
   // SITEMAP OPTIONS
   // ------------------------------------
   sitemap: {
-    hostname: config.siteUrl
+    hostname: config.siteUrl,
   },
   // ------------------------------------
   // GOOGLE ANALYTICS
   // ------------------------------------
   googleAnalytics: {
-    id: config.googleAnalyticsID
+    id: config.googleAnalyticsID,
   },
   // ------------------------------------
   // BUILD CONFIGURATION
   // ------------------------------------
   build: {
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }

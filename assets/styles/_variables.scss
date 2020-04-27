@@ -13,17 +13,17 @@ $gray-900: #212427;
 $black: #000;
 
 $primary: #5f77ca;
-$secondary: #28a745;
-$tertiary: #dc3545;
+$secondary: #585858;
+$tertiary: #181818;
 
 $success: #28a745;
 $info: #17a2b8;
 $warning: #ffc107;
 $danger: #dc3545;
 
-$lightest: $gray-100;
+$lightest: $white;
 $lighter: $gray-200;
-$light: $gray-300;
+$light: $gray-400;
 $dark: $gray-700;
 $darker: $gray-800;
 $darkest: $gray-900;
@@ -124,22 +124,22 @@ $text-muted: $gray-500;
 
 // BUTTONS + FORMS
 // ------------------------------------
-$input-btn-padding-y: $spacer / 2;
-$input-btn-padding-x: $spacer;
+// $input-btn-padding-y: $spacer / 2;
+// $input-btn-padding-x: $spacer;
 
-$input-btn-padding-y-sm: $spacer / 4;
-$input-btn-padding-x-sm: $spacer / 2;
+// $input-btn-padding-y-sm: $spacer / 4;
+// $input-btn-padding-x-sm: $spacer / 2;
 
-$input-btn-padding-y-lg: $spacer / 1.5;
-$input-btn-padding-x-lg: $spacer;
+// $input-btn-padding-y-lg: $spacer / 1.5;
+// $input-btn-padding-x-lg: $spacer;
 
 // BUTTONS
 // ------------------------------------
-$btn-border-radius: $border-radius-sm;
-$btn-font-family: $subheading;
-$btn-font-weight: 700;
+// $btn-border-radius: $border-radius-sm;
+// $btn-font-family: $subheading;
+// $btn-font-weight: 700;
 
-$btn-border-radius-lg: $border-radius;
+// $btn-border-radius-lg: $border-radius;
 
 // FORMS
 // ------------------------------------
@@ -147,27 +147,27 @@ $btn-border-radius-lg: $border-radius;
 
 // NAVS
 // ------------------------------------
-$nav-link-padding-y: $input-btn-padding-y;
-$nav-link-padding-x: $input-btn-padding-x;
-$nav-link-disabled-color: $text-muted;
+// $nav-link-padding-y: $input-btn-padding-y;
+// $nav-link-padding-x: $input-btn-padding-x;
+// $nav-link-disabled-color: $text-muted;
 
-$nav-tabs-border-color: $border-color;
+// $nav-tabs-border-color: $border-color;
 
 // NAVBAR
 // ------------------------------------
-$navbar-padding-y: $spacer;
+// $navbar-padding-y: $spacer;
 
-$navbar-nav-link-padding-x: $spacer / 1.5;
+// $navbar-nav-link-padding-x: $spacer / 1.5;
 
-$navbar-brand-margin-right: $spacer;
+// $navbar-brand-margin-right: $spacer;
 
-$navbar-toggler-padding-y: 0;
-$navbar-toggler-padding-x: 0;
-$navbar-toggler-font-size: 1rem;
+// $navbar-toggler-padding-y: 0;
+// $navbar-toggler-padding-x: 0;
+// $navbar-toggler-font-size: 1rem;
 
-$navbar-dark-toggler-border-color: transparent;
+// $navbar-dark-toggler-border-color: transparent;
 
-$navbar-light-toggler-border-color: transparent;
+// $navbar-light-toggler-border-color: transparent;
 
 // DROPDOWNS
 // ------------------------------------
@@ -175,20 +175,20 @@ $navbar-light-toggler-border-color: transparent;
 
 // PAGINATION
 // ------------------------------------
-$pagination-padding-y: $input-btn-padding-y;
-$pagination-padding-x: $input-btn-padding-x;
+// $pagination-padding-y: $input-btn-padding-y;
+// $pagination-padding-x: $input-btn-padding-x;
 
-$pagination-border-color: $border-color;
+// $pagination-border-color: $border-color;
 
 // CARDS
 // ------------------------------------
-$card-spacer-y: $spacer * 1.25;
-$card-spacer-x: $spacer * 1.25;
-$card-title-spacer-y: $spacer;
-$card-border-color: rgba($black, .125);
-$card-cap-padding-y: $spacer;
-$card-cap-padding-x: $spacer;
-$card-cap-bg: rgba($black, .03);
+// $card-spacer-y: $spacer * 1.25;
+// $card-spacer-x: $spacer * 1.25;
+// $card-title-spacer-y: $spacer;
+// $card-border-color: rgba($black, .125);
+// $card-cap-padding-y: $spacer;
+// $card-cap-padding-x: $spacer;
+// $card-cap-bg: rgba($black, .03);
 
 // TOOLTIPS
 // ------------------------------------

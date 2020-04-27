@@ -29,9 +29,9 @@ import config from '~/data/siteConfig'
 export default {
   data() {
     return {
-      siteName: config.siteTitle
+      siteName: config.siteTitle,
     }
-  }
+  },
 }
 </script>
 
@@ -43,6 +43,6 @@ footer {
   position: relative;
   z-index: 2;
   flex-shrink: 0;
-  padding: $spacer;
+  padding: $spacer 0;
 }
 </style>
