@@ -36,11 +36,11 @@
 
           <b-nav-item href="#dropdowns">Dropdowns</b-nav-item>
 
-          <b-nav-item-dropdown text="Forms">
+          <!-- <b-nav-item-dropdown text="Forms">
             <b-dropdown-item href="#card-types">Types</b-dropdown-item>
             <b-dropdown-item href="#card-variants">Variants</b-dropdown-item>
             <b-dropdown-item href="#card-groups">Groups</b-dropdown-item>
-          </b-nav-item-dropdown>
+          </b-nav-item-dropdown> -->
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -771,149 +771,6 @@
         </b-row>
       </div>
     </div>
-
-    <div id="typography" class="bs-docs-section my-8">
-      <div class="section-header">
-        <h3 class="mb-0 p-3 bg-dark rounded-top text-white">
-          Typography
-        </h3>
-      </div>
-      <div id="typography-headings" class="section-header mb-8">
-        <h5 class="mb-0 p-3 bg-light rounded-bottom">
-          Headings
-        </h5>
-      </div>
-      <div class="section-content my-4">
-        <b-row align-v="center">
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Heading Level 1</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h1>Lorem ipsum dolar</h1>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Heading Level 2</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h2>Lorem ipsum dolar</h2>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Heading Level 3</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h3>Lorem ipsum dolar</h3>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Heading Level 4</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h4>Lorem ipsum dolar</h4>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Heading Level 5</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h5>Lorem ipsum dolar</h5>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Heading Level 6</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h6>Lorem ipsum dolar</h6>
-          </b-col>
-        </b-row>
-      </div>
-      <div id="typography-display" class="section-header my-8">
-        <h5 class="mb-0 p-3 bg-light rounded">
-          Display Text
-        </h5>
-      </div>
-      <div class="section-content my-4">
-        <b-row align-v="center">
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Display Text 1</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h1 class="display-1">Lorem ipsum</h1>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Display Text 2</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h1 class="display-2">Lorem ipsum</h1>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Display Text 3</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h1 class="display-3">Lorem ipsum</h1>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Display Text 4</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <h1 class="display-4">Lorem ipsum</h1>
-          </b-col>
-        </b-row>
-      </div>
-      <div id="typography-text" class="section-header my-8">
-        <h5 class="mb-0 p-3 bg-light rounded">
-          Text Elements
-        </h5>
-      </div>
-      <div class="section-content my-4">
-        <b-row align-v="center">
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Paragraph</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              ad. Vel ratione ullam neque vero esse similique vitae eaque sint
-              eveniet ipsam, enim, culpa illo qui blanditiis quidem quas
-              corporis.
-            </p>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Lead Paragraph</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              ad. Vel ratione ullam neque vero esse similique vitae eaque sint
-              eveniet ipsam, enim, culpa illo qui blanditiis quidem quas
-              corporis.
-            </p>
-          </b-col>
-          <div class="w-100 my-2"></div>
-          <b-col sm="12" md="3">
-            <span class="h6 text-light">Blockquote</span>
-          </b-col>
-          <b-col sm="12" md="9">
-            <blockquote class="blockquote">
-              <p class="mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.
-              </p>
-              <footer class="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </footer>
-            </blockquote>
-          </b-col>
-        </b-row>
-      </div>
-    </div>
-
-    &nbsp;
   </div>
 </template>
 
