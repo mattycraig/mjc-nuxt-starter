@@ -7,7 +7,6 @@
         <nuxt-link class="btn btn-sm btn-link mx-1" to="/about"
           >About</nuxt-link
         >
-        <nuxt-link class="btn btn-sm btn-link mx-1" to="/sink">Sink</nuxt-link>
       </div>
     </b-container>
   </header>

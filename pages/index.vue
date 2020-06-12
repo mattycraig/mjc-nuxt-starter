@@ -7,7 +7,6 @@
       <div class="links">
         <nuxt-link class="btn btn-primary mx-1" to="/">Home</nuxt-link>
         <nuxt-link class="btn btn-secondary mx-1" to="/about">About</nuxt-link>
-        <nuxt-link class="btn btn-tertiary mx-1" to="/sink">Sink</nuxt-link>
       </div>
     </div>
   </div>
