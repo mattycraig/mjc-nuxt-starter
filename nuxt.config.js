@@ -2,6 +2,7 @@ import config from './data/siteConfig'
 
 export default {
   mode: 'universal',
+  // components: true,
   // ------------------------------------
   // HEADERS OF THE PAGE
   // ------------------------------------
@@ -90,6 +91,7 @@ export default {
   // NUXT.JS DEV-MODULES
   // ------------------------------------
   buildModules: [
+    // '@nuxt/components',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/google-analytics',
