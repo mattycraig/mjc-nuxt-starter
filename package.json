@@ -22,23 +22,23 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "bootstrap": "^4.5.0",
-    "bootstrap-vue": "^2.15.0",
-    "nuxt": "^2.13.3"
+    "bootstrap-vue": "^2.16.0",
+    "nuxt": "^2.14.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
-    "@fortawesome/free-brands-svg-icons": "^5.13.1",
-    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/vue-fontawesome": "^0.1.10",
-    "@nuxtjs/browserconfig": "^0.0.12",
-    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/browserconfig": "^0.0.13",
+    "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/google-analytics": "^2.3.0",
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.4.0",
+    "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": ">=1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -50,7 +50,7 @@
     "nuxt-responsive-loader": "^2.0.1",
     "nuxt-webfontloader": "^1.1.0",
     "prettier": "^2.0.5",
-    "sass-loader": "^9.0.1",
+    "sass-loader": "^9.0.2",
     "stylelint": "^13.6.1"
   }
 }
