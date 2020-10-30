@@ -74,6 +74,10 @@ export default {
     ],
   },
   // ------------------------------------
+  // SET TARGET
+  // ------------------------------------
+  target: 'static',
+  // ------------------------------------
   // CUSTOM LOADER
   // ------------------------------------
   loading: '~/components/Loading/Loading.vue',
@@ -129,6 +133,7 @@ export default {
   // BOOTSTRAPVUE
   // ------------------------------------
   bootstrapVue: {
+    icons: false,
     bootstrapCSS: false,
     bootstrapVueCSS: false,
     // componentPlugins: ['LayoutPlugin', 'FormPlugin']
