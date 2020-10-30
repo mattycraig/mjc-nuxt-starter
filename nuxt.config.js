@@ -1,9 +1,8 @@
 import config from './data/siteConfig'
 
 export default {
-  // components: true,
   // ------------------------------------
-  // HEADERS OF THE PAGE
+  // SEO & HEADERS
   // ------------------------------------
   head: {
     title: config.siteTitle,
@@ -77,20 +76,25 @@ export default {
   // ------------------------------------
   // CUSTOM LOADER
   // ------------------------------------
-  loading: '~/components/Loading.vue',
+  loading: '~/components/Loading/Loading.vue',
   // ------------------------------------
-  // GLOBAL CSS
+  // LOAD COMPONENTS AUTOMATICALLY
+  // ------------------------------------
+  components: true,
+  // ------------------------------------
+  // CSS
   // ------------------------------------
   css: ['@/assets/styles/main.scss'],
+  extractCSS: true,
   // ------------------------------------
-  // PLUGINS TO LOAD BEFORE MOUNTING THE APP
+  // PLUGINS
   // ------------------------------------
   plugins: [],
   // ------------------------------------
   // NUXT.JS DEV-MODULES
   // ------------------------------------
   buildModules: [
-    // '@nuxt/components',
+    '@nuxt/components',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/google-analytics',
@@ -110,7 +114,7 @@ export default {
     '@nuxtjs/pwa',
   ],
   // ------------------------------------
-  // PWA OPTIONS
+  // PROGRESSIVE WEB APP
   // ------------------------------------
   pwa: {
     manifest: {
@@ -122,7 +126,7 @@ export default {
     },
   },
   // ------------------------------------
-  // BOOTSTRAPVUE GLOBALS/OPTIONS
+  // BOOTSTRAPVUE
   // ------------------------------------
   bootstrapVue: {
     bootstrapCSS: false,
@@ -130,16 +134,14 @@ export default {
     // componentPlugins: ['LayoutPlugin', 'FormPlugin']
   },
   // ------------------------------------
-  // FONTAWESOME OPTIONS
+  // FONTAWESOME
   // ------------------------------------
   fontawesome: {
     imports: [
-      // SOLID
       {
         set: '@fortawesome/free-solid-svg-icons',
         icons: ['fas'],
       },
-      // BRANDS
       {
         set: '@fortawesome/free-brands-svg-icons',
         icons: ['fab'],
@@ -147,7 +149,7 @@ export default {
     ],
   },
   // ------------------------------------
-  // CUSTOM WEBFONT OPTIONS
+  // WEBFONTS
   // ------------------------------------
   webfontloader: {
     custom: {
@@ -171,13 +173,13 @@ export default {
     ],
   },
   // ------------------------------------
-  // BROWSERCONFIG OPTIONS
+  // BROWSERCONFIG
   // ------------------------------------
   browserconfig: {
     TileColor: config.themeColor,
   },
   // ------------------------------------
-  // SITEMAP OPTIONS
+  // SITEMAP
   // ------------------------------------
   sitemap: {
     hostname: config.siteUrl,
@@ -187,11 +189,5 @@ export default {
   // ------------------------------------
   googleAnalytics: {
     id: config.googleAnalyticsID,
-  },
-  // ------------------------------------
-  // BUILD CONFIGURATION
-  // ------------------------------------
-  build: {
-    extend(config, ctx) {},
   },
 }
