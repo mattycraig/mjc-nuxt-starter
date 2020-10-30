@@ -7,6 +7,7 @@
         <nuxt-link class="btn btn-sm btn-link mx-1" to="/about"
           >About</nuxt-link
         >
+        <Theme class="d-inline-block"></Theme>
       </div>
     </b-container>
   </header>

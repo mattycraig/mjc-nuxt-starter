@@ -102,6 +102,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/google-analytics',
+    '@nuxtjs/color-mode',
   ],
   // ------------------------------------
   // NUXT.JS MODULES
