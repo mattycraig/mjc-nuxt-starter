@@ -1,7 +1,6 @@
 import config from './data/siteConfig'
 
 export default {
-  mode: 'universal',
   // components: true,
   // ------------------------------------
   // HEADERS OF THE PAGE
