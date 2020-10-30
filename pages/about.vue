@@ -60,12 +60,8 @@
 
 <script>
 import config from '~/data/siteConfig'
-import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo,
-  },
   data() {
     return {
       metaTitle: 'About',
